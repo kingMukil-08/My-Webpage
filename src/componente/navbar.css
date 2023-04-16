@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-color: #2b2b2b;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+
+}
+:root{
+    --mainColor: blue;
+    --mainColorLight: aqua;
+    --secondaryColor: red;
+    --textColor: white;
+}
+header{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+nav a{
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--secondaryColor);
+    font-size: 150%;
+}
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+/* animation - KING */
+svg {
+    display: block;
+    font: 10em '';
+    width: 500px;
+    height: 300px;
+    margin: 0 0;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: blueviolet;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: aquamarine;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: aqua;
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(4){
+	stroke: yellow;
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(5){
+	stroke: greenyellow;
+	animation-delay: -1s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/* Text - Mukil */
+
+/* basic */
+.con {
+    color: aqua;
+    font-size: small;
+    text-align:left;
+	  padding-top:20%;
+    margin-left: 10%;
+}
+.con p{
+    margin-top: 20px;
+    color: aquamarine;
+}
+
+/* Animation - Mukil */
+.f1 {
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s *1)
+  }
+ .f2{
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * 2)
+  }
+  .f3{
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s *3)
+  }
+ .f4{
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * 4)
+  }
+  .f5{
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * 5)
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  .f1:hover,.f2:hover,.f3:hover,.f4:hover,.f5:hover{
+    color: red;
+    font-size: 5vh;
+  }
+
+  /* backgroun - Mukil */
+  .s1{
+    width: 50%;
+    margin: 50vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 10vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* back-name */
+.main_bg {
+height: 100vh;
+background: linear-gradient(45deg,
+    rgba(116, 167, 215,.7),
+    rgba(70, 38, 126,.7),
+    rgba(103, 136, 193,.7),
+    rgba(79, 67, 147,.7),
+    rgba(90, 99, 168,.7)
+) 0 0 / 1000% no-repeat, url(https://images.fineartamerica.com/images-medium-large-5/modern-glass-corporate-building-warchi.jpg) 0 0 / cover no-repeat;
+-webkit-animation: gradientAnimation 40s ease infinite;
+animation: gradientAnimation 40s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+0%   { background-position: 0% 30%, 0 0;}
+50%  { background-position: 100% 70%, 0 0;}
+100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+0%   { background-position: 0% 30%, 0 0;}
+50%  { background-position: 100% 70%, 0 0;}
+100% { background-position: 0% 30%, 0 0;}
+}
+/*  */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

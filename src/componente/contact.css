@@ -1,0 +1,47 @@
+.box{
+    padding: 3vh 3vh;
+    border-radius: 20px;
+    margin: 10px 3vh;
+}
+.border{
+    border: 5px solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+.phone span:hover{
+    color: blue;
+    font-size: 3vh;
+}
+.gmail span:hover{
+    color: red;
+    font-size: 3vh;
+}
+.git span:hover{
+    color: green;
+    font-size: 3vh;
+}
+.gmail{
+    width: 60vh;
+}
+.gmailp{
+    max-width: 20%;
+}
+.phn{
+    max-width: 20%;
+}
+.phone{
+    width: 60vh;
+}
+.gitp{
+    max-width: 20%;
+}
+.git{
+    width: 60vh;
+}
+.total{
+    margin: 5vh;
+    display: flex;
+    font-size: 12px;
+}
+
+/* bg */
